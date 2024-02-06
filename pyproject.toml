@@ -1,0 +1,34 @@
+[project]
+name = "csv4vertex"
+version = "0.1.0"
+description = "Python module that converts .csv to .jsonl file for Google VertexAI fine-tuning."
+authors = [
+    {name = "Keming He", email = "keminghe.career@gmail.com"},
+]
+dependencies = [
+    "hypothesis>=6.98.2",
+    "pandas>=2.2.0",
+    "numpy>=1.26.4",
+    "Pyarrow>=15.0.0",
+
+    "pytest>=8.0.0",
+    "mypy>=1.8.0",
+    "pylint>=3.0.3",
+
+    "psutil>=5.9.8",
+
+    "sphinx>=7.2.6",
+
+    "ipython>=8.21.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "GPL-3.0-only"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
